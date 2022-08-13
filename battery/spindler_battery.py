@@ -15,4 +15,4 @@ class SpindlerBattery(battery):
         else:
             delta = relativedelta.relativedelta(
                 self.current_date, self.last_service_date)
-            return delta.years >= 2
+            return delta.years >= 3
