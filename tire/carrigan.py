@@ -6,4 +6,4 @@ class Carrigan(Tire):
         self.tire_usage = tire_usage
 
     def needs_service(self):
-        return False
+        return max(self.tire_usage) >= 0.9
