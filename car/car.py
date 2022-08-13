@@ -9,4 +9,4 @@ class Car(Serviceable):
         self.battery = battery
 
     def needs_service(self):
-        pass
+        return self.battery.needs_service() or self.engine.needs_service()
